@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея - Світ мотоциклів</title>
+    <style>
+        /* Основні стилі твого сайту */
+        body {
+            background-color: #d7ecff;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 10px;
+            background-color: #003399;
+            margin: 0;
+            text-align: center;
+        }
+
+        ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Стилі для галереї */
+        .gallery-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+            gap: 20px; /* Відстань між фото */
+        }
+
+        .gallery-item {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #bcd1ea;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Щоб фото не розтягувалось, а акуратно вписувалось */
+            border-radius: 6px;
+        }
+
+        .gallery-item h3 {
+            margin: 10px 0 5px 0;
+            color: #003399;
+        }
+
+        .gallery-item p {
+            margin: 0;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="history.html">Історія</a></li>
+        <li><a href="types.html">Види</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+    </ul>
+
+    <h1 style="text-align: center; margin-top: 20px;">Відомі марки мотоциклів</h1>
+
+    <div class="gallery-container">
+
+        <div class="gallery-item">
+            <img src="moto1.jpg" alt="Yamaha R1">
+            <h3>Yamaha</h3>
+            <p>Модель: YZF-R1</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="moto2.jpg" alt="Kawasaki Ninja">
+            <h3>Kawasaki</h3>
+            <p>Модель: Ninja H2R</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="moto3.jpg" alt="Ducati Panigale">
+            <h3>Ducati</h3>
+            <p>Модель: Panigale V4</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="moto4.jpg" alt="Harley-Davidson">
+            <h3>Harley-Davidson</h3>
+            <p>Модель: Iron 883</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
